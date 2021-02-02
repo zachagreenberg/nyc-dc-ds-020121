@@ -4,7 +4,7 @@
 
 # The first time you set up your lecture repo you will need to:
 
-## 1. Fork the repository at https://github.com/learn-co-students/nyc-mhtn-ds-120720-lectures.git
+## 1. Fork the repository at https://github.com/learn-co-students/nyc-dc-ds-020121.git
 
 
 ## 2. Clone down your forked repository
@@ -16,7 +16,7 @@
 
 3. Add the learn-co lecture notes repo as the remote, **this step only happens once**
 ```
-git remote add upstream https://github.com/learn-co-students/nyc-mhtn-ds-120720-lectures.git
+git remote add upstream https://github.com/learn-co-students/nyc-dc-ds-020121.git
 ```
 
 4. Check the remote is set and your lecture notes repo is correct.
