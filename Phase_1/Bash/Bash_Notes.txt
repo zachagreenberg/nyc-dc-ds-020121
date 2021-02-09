@@ -1,0 +1,43 @@
+BASH Notes
+
+-pwd —> print working directory
+-ls —> list directory contents
+-cd —> change directory
+-mv  —> move file & renaming files
+-cp —> copy file
+-TAB —> autocomplete
+-echo > —> overwrites a file**
+-echo >> —> appends a file
+-touch —> creates files
+-echo $SHELL —> checks BASH
+-man —> is the help function
+-curl —> gets text output of website * WEBSCRAPPING* -o lets you rename them
+-grep —> looks for txt patterns
+-* wildcard —> finding files that end in the same name
+-%20 is a space in a file name
+-!pwd --> the ! runs BASH commands in jupyter notebook
+
+
+
+
+/ —> root directory
+~ —> home directory
+. —> current directory
+.. —> parent directory(directory before)
+
+Absolute Path —> starting from beginning
+Relative Path —> starting from where you 
+
+Flag = single char ie. ls -a
+	full word ie. - - version
+
+-a shows hidden
+-l shows more details
+
+Vim commands:
+-i —> insert mode
+-A —> insert at end of line
+-dd —> delete
+-10G —> go to line 10
+-:wq —> save and exit
+:q! —> exit without saving
