@@ -1,0 +1,18 @@
+Notes on Git/GitHub:
+-PULL is taking from Github
+-PUSH is putting in Github
+-Git is your local computer
+-PULL goes to workspace(ie your computer)
+-FETCH goes to repository
+-when you PULL UPSTREAM it takes it from the ORIGINAL repository
+-ADD —> COMMIT —> PUSH (to Github)
+-GIT RESET cancels your add
+-GIT STATUS checks adds
+-master is now called main
+-branches: GIT CHECKOUT -b makes and switch
+	       GIT BRANCH -d name deletes
+-GIT STASH hides your work from git status
+-local is thru command and remote is on GitHub
+-GIT INIT creates repository on local
+-GIT REMOTE add <url> to move it to GitHub
+-git merge <branch> merges your branches
