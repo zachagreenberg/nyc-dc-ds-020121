@@ -1,0 +1,25 @@
+SQL Notes
+
+-START WITH :import sqlite3
+            conn = sqlit3.connect(data)
+            cur = conn.cursor()
+-cur.execute(“”” SELECT statement;”””).fetchall() 
+
+-put your fetchall into a Dataframe
+    df = pd.DataFrame(cur.fetchall())
+    df.columns = [x[0] for x in cur.description]
+
+Some commands:
+
+ORDER BY ASC is default
+LIMIT limits the amount you see
+BETWEEN this AND that
+IS NULL looks for null
+COUNT counts the records that match your condition
+GROUP BY groups by a certain condition — has AGG functions like in Pandas
+HAVING clause is like WHERE but after group
+JOIN brings multiple tables together
+USING is the defining column that joins them 
+AS is creating an alias, but also you can do something like this : product p or p.product
+Subqueries are like list comprehensions
+
