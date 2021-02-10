@@ -1,0 +1,14 @@
+More Notes on JSON and API:
+
+How to open a JSON:
+import json
+With open(‘data.json’) as f:
+data = json.load(f)
+
+
+JSONS are typically in nested dictionary types of some sort
+You can put the converted file into PANDAS ie pd.DataFrame(data[‘response’][‘docs])
+Use lambda functions to help break apart data and create new columns!
+
+
+Look into the API part of the documentation for how to access APIs using request and how to create secret folders to store your API key
