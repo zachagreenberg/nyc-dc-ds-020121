@@ -13,3 +13,9 @@ LIMIT 1
 """).fetchall()
 
 cur.description
+
+SEARCH DETAILS:
+
+Umlaut is OPT-Letter (HOLD) Then Letter
+ESC single quote ie(Eugene O'Neill) is '' (doubling them)
+CAST to convert the data type to manipulate it
