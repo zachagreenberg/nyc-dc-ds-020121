@@ -1,0 +1,15 @@
+SQL_Notes on This Lecture:
+
+Accessing Column Names:
+cur.execute("""
+SELECT name 
+FROM sqlite_schema
+""").fetchall()
+
+cur.execute("""
+SELECT *
+FROM <db>
+LIMIT 1
+""").fetchall()
+
+cur.description
