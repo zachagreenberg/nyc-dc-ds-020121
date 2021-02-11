@@ -1,0 +1,26 @@
+Webscrapping Notes from the Lecture:
+
+HTML TAGS:
+<html>
+<head>
+<body>
+<p> paragraph
+<a href=> a is anchor, href allows you to add a link
+	ie <a href=google.com></a>
+
+<div> division
+<b> bold
+<i>italic
+<u> underline
+<table> table
+<form>
+<br> is line break
+<h1> is a header tag ‘1’ indicates the largest
+<ul> is unnumbered list
+<li> gives you bullet points 
+
+Test your html code: https://htmledit.squarefree.com
+
+developer.mozilla.org/en-US/docs/Web/HTML/Element shows more tags
+
+If a tag is embedded in another it is the child tag, the one before it is parent, any on the same line is sibling
