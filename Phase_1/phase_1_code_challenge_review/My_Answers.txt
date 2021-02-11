@@ -1,0 +1,84 @@
+My Answers to the Coding Challenge:
+
+
+1.
+
+facebook = pd.read_csv('/Users/zachgreenberg/Documents/Flatiron/nyc-dc-ds-020121/Phase_1/phase_1_code_challenge_review/data/Facebook_metrics/dataset_Facebook.csv', sep=';')
+
+
+2a.
+
+facebook.isnull().sum()
+
+2b.
+
+facebook.dropna()
+
+2c.
+
+facebook = facebook[facebook['share'].notnull()]
+
+3.
+
+facebook['likes_per_impression']=facebook['comment']/facebook['like']
+facebook = facebook.replace([np.inf, -np.inf], np.nan)
+
+4. 
+
+facebook[(facebook['Type'] == 'Photo') & (facebook['like'] == facebook['like'].max())]
+
+5.
+
+mean_interactions_photos = facebook[facebook['Type']=='Photo']['Total Interactions'].mean()
+mean_interactions_photos
+
+6.
+
+x = list(range(1,13))
+fig, ax = plt.subplots()
+ax.bar(list(range(1,13)), facebook['Post Month'].value_counts(sort = False))
+ax.set_xlabel('Month')
+ax.set_xticks(list(range(1,13)))
+ax.set_ylabel('Number of Posts')
+ax.set_title('Number of FB Posts per Month')
+plt.tight_layout()
+
+7.
+
+fig, ax = plt.subplots()
+ax.scatter(facebook['Total Interactions'], facebook['like'])
+ax.set_xlabel('Total Interactions')
+ax.set_ylabel('likes')
+ax.set_title('Total Interactions vs. Facebook likes')
+plt.tight_layout()
+
+8.
+
+first_twenty_songs = first_response['albums']['items']
+first_twenty_songs
+
+9.
+
+track_names = [first_response['albums']['items'][i]['name'] 
+              for i in range(len(first_response['albums']['items']))]
+track_names
+
+10.
+
+song_dictionary = {}
+for i in range(len(first_response['albums']['items'])):
+    song_dictionary[first_response['albums']['items'][i]['name']] = [first_response['albums']['items'][i]['artists'][j]['name'] for j in range(len(first_response['albums']['items'][i]['artists']))]
+
+song_dictionary
+
+11.
+
+    list_of_songs = []
+    
+    song_n_artist = list(song_dictionary.items()) 
+    
+    for entry in song_n_artist:
+        if artist_name in entry[1]:
+            list_of_songs.append(entry[0])
+    return list_of_songs
+
