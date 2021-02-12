@@ -1,0 +1,12 @@
+Data Visualization Additional Notes
+
+Always use fig, ax = plt.subplots
+
+When you use xtick labels do this:
+ax.set_xticks()
+ax.set_xticklabels()
+
+For the figsize parameter, think of it as figsize=(rowsize, columnsize)
+
+To get multiple plots, you must specify the parameter nrows or ncols
+You can call on them individually using slicing
