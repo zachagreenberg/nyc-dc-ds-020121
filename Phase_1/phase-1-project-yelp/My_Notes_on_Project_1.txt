@@ -1,0 +1,52 @@
+MY NOTES ON PROJECT 1:
+
+GO TO THIS LINK FOR EXAMPLE TEMPLATES:
+https://github.com/learn-co-curriculum/dsc-project-template
+
+BUSINESS PROBLEM:
+Looking to open a small business and trying to decided what to open and where
+Generating insights for a stakeholder
+
+DATA:
+Using Yelp API for getting data OR OTHERS 
+Can use other data: ie csv, census data(there is a Python package for this)
+
+Using census data: https://towardsdatascience.com/accessing-census-data-with-python-3e2f2b56e20d
+pip install census OR conda install census
+
+** YOU NEED TO PICK YOUR LOCATIONS FIRST **
+
+Compare 2 businesses in the same market
+OR
+1 business and two markets(locations)
+(Easier to do two different locations that are farther away)
+
+ie	which business has most locations per capita
+	which has a lot of 5 star reviews
+	you can look at price distribution
+
+EDA is going to be poking around and looking at details
+NEEDS TO BE DATA THAT SUPPORTS DECISION
+
+
+NEED TO TURN IN:
+
+GitHub Repo - New repository OUTSIDE OF Repo
+	containing Data files(they’ll be csv, NOT larger than 100MB)
+	all notebooks done with Data Analysis
+	include a README.md
+
+Jupyter Notebook what shows a CLEANED version of your analysis
+
+Non-technical presentation
+	Using PPT or Google Slides to focus on Business Problem and Analysis
+
+**Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables.**
+
+KEY POINTS:
+- Need 3 business recommendations. Have multiple pieces to show how you got to the conclusion.
+-Communication is key!!!
+-USE VISUALIZATIONS (Minimum of 4!)
+-5 MINUTES LONG
+
+**Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables.**
