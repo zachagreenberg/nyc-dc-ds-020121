@@ -16,3 +16,6 @@ Notes on Git/GitHub:
 -GIT INIT creates repository on local
 -GIT REMOTE add <url> to move it to GitHub
 -git merge <branch> merges your branches
+    
+WATCH THIS VIDEO TO EXPLAIN THE BRANCH WORKFLOW:
+    https://www.youtube.com/watch?v=oFYyTZwMyAg
