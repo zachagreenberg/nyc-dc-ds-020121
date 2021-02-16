@@ -19,3 +19,20 @@ Notes on Git/GitHub:
     
 WATCH THIS VIDEO TO EXPLAIN THE BRANCH WORKFLOW:
     https://www.youtube.com/watch?v=oFYyTZwMyAg
+        
+        
+GIT BRANCHING LECTURE NOTES:
+    Pull Requests - 'Hey I made these changes, we should all pull copys down'
+        can from there delete branches
+        after a pull request is done, make sure you pull to your local!
+    
+    When pushing up to the github do git push -u origin <branch>
+    
+    You can physically resolve merge conflicts on GitHub. the '===' separates the conflicts
+    
+    gitscm.com
+    
+    git rebase
+         A---B---C topic                     A---B---C topic 
+         /                                  /
+    D---E---F---G master           D---E---F---G master
