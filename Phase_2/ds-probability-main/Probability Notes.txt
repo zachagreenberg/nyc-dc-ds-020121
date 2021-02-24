@@ -1,0 +1,55 @@
+Probability Notes
+
+Permutation - Order matters (arrange) 
+Combination 
+
+E - means belong to
+E w/ slash - means does not belong to 
+Union - combining the sets and getting the unique values
+A  C AUB
+C-means subset
+Intersection (N) - takes the common elements ONLY
+ANB C A & ANB C B
+Difference of A-B is the elements of A NOT in B
+IF INTERSECTION OF SETS IS EMPTY THEY ARE DISJOINT
+
+PYTHON:
+.issubset(), .union(), .intersection(), .difference()
+
+Universal set(S) defines all possible outcomes {sample space}
+Event space is the collection of events we ‘care’ about
+Prob is Event/Universal
+
+Permutations - Order matters
+Combinations - Order does not matter *LOOK UP FORMULAS* math.factorial
+
+Axioms of Prob
+	Non negative 
+	 ANB = 0, AUB = A+B IF DISJOINT, ELSE AUB = A+B-ANB
+	Prob of sample space is 1
+	 
+If events do NOT have an effect on each other they are INDEPENDENT (ie replacing before next trial)
+
+If events cannot happen at the same time, they are DISJOINT (Mutually Exclusive)  
+ ANB = 0, AUB = A+B
+IF NOT DISJOINT (aka NOT EXCLUSIVE)  AUB = A+B-ANB
+
+Dependent events, the first event has an effect on the second event occurring(ie no replacement)
+
+PYTHON:
+np.random.choice()
+
+Conditional Probability dividing by the known fact that something has to occur
+A/B = ANB
+	B
+	Product Rule puts the ANB on the other side of the equation
+	Product Rule - for independent events it is ANB
+
+	Chain Rule
+
+Bayes Theorem helps you to switch conditional probabilities, and gives you the ability to come at conditional given different knowledge
+
+A/B = B/A A
+	B
+
+Law of Total Probability is used with partitions so that if the events are Disjoint, the probability of A inside the sections of B is (ANB1) + (ANB2) + (ANB3) and we’ll often use conditional prob to find it

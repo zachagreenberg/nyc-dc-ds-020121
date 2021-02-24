@@ -1,0 +1,21 @@
+Distributions
+
+PYTHON: 
+Put the counts of set into a DataFrame PMF is counts / length of set
+Discrete - PMF
+	It is a map of the outcomes of the trial by probability
+Continuous - PDF
+
+Bernoulli - success or no ie(coin toss (looks like a 7/10 split))
+Poisson - events in a time period where rate of occurrence in constant ie(visitors to a website)
+Uniform - all events are equally likely
+Gaussian - Bell shape
+
+E(x) is expected value. It is essentially the mean, but that is because as more and more trials are completed, the expected value will get closer to the mean.
+
+For Bernoulli with < or > you have to add the prob of all up to it
+    If anything, the combinations formula is very good for this. 
+        The formula = n!/(x!(n-x!)) * (p**x) * (1-p)**(n-x)
+        
+This website is good for playing with distributions: 
+https://www.intmath.com/counting-probability/normal-distribution-graph-interactive.php
