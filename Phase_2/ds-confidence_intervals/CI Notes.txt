@@ -1,0 +1,40 @@
+Samples can often be a good estimate of the population.
+
+The error is the sample mean - the population mean. It shows how off your sample was from the population. Can indicate whether or not it was a good representation of the population.
+
+Confidence interval is x - z(alpha)*standard err
+	get the z by subtracting from 1 and looking that table in the middle 
+
+We are 95% confident that the population mean is in the range(x, x1)
+
+Parameter - Population
+Statistic - Sample
+
+x < 30 for t
+Students t is for smaller samples where population stats may be unknown
+	formula for t-1(DoF) = x - mu / standard error
+	formula for interval is same as z but with t
+
+The z score formula can be used to scale a test
+
+The Probability of an individual number in a continuous distribution is 0!
+
+Slides on this: https://docs.google.com/presentation/d/1KBWZmPbxZ4M1ef2clgdxEqWFGzDauWI2205OzDAS_B0/edit#slide=id.g482e64f15f_0_22
+
+Confidence Interval to estimate the parameter of interest. Pretty much always talking about population mean. 
+
+IN PYTHON:
+Stats.norm.interval(alpha, loc(mean), scale(sd) for Z
+stats.t.interval(alpha, df, loc, scale) for t
+
+CLT - The mean of our sample means is equal to our population mean
+
+In a skewed diet, the sample size should be above 30
+
+**Most of the time you use t distribution b/c you don’t know the pop mean
+As the sample size gets larger in the t it approximates the normal distribution
+Once you get above 100, you can use the z distribution off hand
+
+
+Population proportion CI 
+p+=za/2ssqrt(p*1-p/n)

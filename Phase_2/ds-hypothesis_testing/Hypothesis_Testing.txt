@@ -1,0 +1,73 @@
+HYPOTHESIS TESTING NOTES
+
+Important parts of the scientific method
+Alternative and null hypothesis
+	The null hypothesis simply means that your other hypothesis is not true
+
+When you carry out your statistical tests you will check to see if the results are significant
+
+You got either reject or fail to reject the null hypothesis
+
+A good experiment should have a control group
+
+Single blind study is when the participants don't know what group they're in, double blind is when neither the participants or the administrators know
+
+We will always assume every sample is independent, every sample is collected randomly, the sample is normally distributed, and the sample size is appropriate.  Larger sample sizes are better for randomness
+
+A good experiment should be reproducible
+
+The null hypothesis is that there is no relationship between A and B
+
+The alternative hypothesis is traditionally the one that is thought of when conducting the experiment
+
+If the P value is .03 you can think of this is saying that there is a 3% chance of obtaining the results I'm seeing when the Null is true
+
+Alpha is the marginal threshold at which you are OK with rejecting the null can be between 0 and 1
+	most common is .05
+
+If the P value is less than alpha then you reject the null hypothesis and you except that there is no relationship between the independent and dependent variables. It doesn't prove anything it just shows that there's no evidence to support the alternative
+
+If it is less you reject the null and except the alternative and if it is greater and you fail to reject the null.
+
+I one tail test is when you want to know if a parameter is greater than or less than a different parameter (one directional
+
+A two tall test is basically saying that one is not equal to the other so it can vary in either direction
+
+Again the results do not prove that there is a relationship in other shows that there is evidence to support or not evidence to support that there may be a relationship
+
+The one sample Z test is used only for tests related to the sample mean
+It is best suited for situations where you wanna investigate whether a given sample comes from a particular population
+
+With a one sample Z test, when you do the equation to get the Z score if you subtract it from one that gives you your P value
+
+Type I is False Positive
+Type II is False Negative
+
+T Test, Z Test, Effect Size
+
+For Z Test ABS blue of Z score needs to be > z critical value
+If the ABS Value of t score is lower that the t statistic, we CANNOT reject the null
+
+P value for one sided is 1 - the number
+Two sided is 1 - Pval * 2
+
+HYPOTHESIS TESTING IN PYTHON:
+https://towardsdatascience.com/hypothesis-testing-in-machine-learning-using-python-a0dc89e169ce
+
+Identify Null and Alternative
+Select Alpha
+Identify sampling distribution
+Calculate Test Stat
+Calculate pval OR find rejection region(critical value)
+Declaring Conclusion
+
+Rejection region is rang of values where null is NOT possible. Critical value separates rejection region from non-rejection 
+
+alpha is prob of type 1 error
+
+SLIDES TO LOOK AT
+https://docs.google.com/presentation/d/1r4rFHsSD2baOG8sey7xcntoNelzcMusl6XuhZKNYciU/edit?usp=sharing
+
+https://docs.google.com/presentation/d/1kCuewWEZJVGDBE79LyVVPkPqUQXPcNYCLERdn4-ONdI/edit?usp=sharing
+
+https://docs.google.com/presentation/d/1kCuewWEZJVGDBE79LyVVPkPqUQXPcNYCLERdn4-ONdI/edit?usp=sharing
