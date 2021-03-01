@@ -1,0 +1,91 @@
+PYTHON FOR STATISTICS
+
+
+Hypothesis
+Set Alpha
+Name Test
+
+Alternative is what you are trying to prove.
+
+CONFIDENCE INTERVALS
+https://www.kaggle.com/hamelg/python-for-data-23-confidence-intervals
+
+HYPOTHESIS TESTING
+https://www.kaggle.com/hamelg/python-for-data-24-hypothesis-testing
+
+CIs
+	Z
+		critical value: stats.norm.ppf(1-(alpha/2))
+		moe: zcrit * popstd/sqrt(n)
+		CI: (x_bar-moe, x_bar+moe)
+			stats.norm.interval(conf.level, mean, popstd/sqrt(n)
+	T
+		critical: stats.t.ppf(1-(alpha/2), df)
+		moe = tcrit * samplestd/sqrt(n)
+		CI = (x_bar - moe, x_bar+moe)
+			stats.t.interval(conf.leve, df, samplemean, samplestd/sqrt(n))
+
+	Prop
+		critical: stats.norm.ppf(1-(alpha/2))
+		moe = zcrit * sqrt((p*(1-p)/n  —>p=point estimate of prop
+		CI = (p-moe, p+moe)
+			stats.norm.interval(conf.level, p, sqrt(p*(1-p)/n)
+
+HYPO
+	T
+		critical: stats.t.ppf(1-(alpha/2), df) *This is for 2 tailed
+		
+		s = np.std(sample, ddof=1)
+		
+		statistic:( x_bar - mu) / sqrt(s/n)
+		
+		2 test statistic (x1-x2)/sp(1/n1+1/n2) —> sp is pooled standard dev
+			https://online.stat.psu.edu/stat500/lesson/7/7.3/7.3.1/7.3.1.1
+		
+		pval: stats.t.cdf(t-stat, df)*2 for 2 tailed
+
+		1sample = stats.ttest_1samp(data, pop mean, *alternative)
+		
+		2 sample = stats.ttest_ind(data1, data2, equal_var = False, *alternative*)
+			*pooledvar is equal_var ==True
+			stats.ttest_ind_from_stats(mean1, std1, n1, mean2, std2, n2, equal_var, *alternative: ie two sided, less, greater)
+				
+		2 sample paired = stats.ttest_rel(data1, data2, alternative**)
+		
+
+	Z
+		critical: critical value: stats.norm.ppf(1-(alpha/2))
+		
+		statistic: (x_bar - mu) / (popstd / sqrt(n))
+		
+		pval = stats.norm.sf(abs(z)) * 2 for 2 tailed
+
+	ANO
+		critical = stats.f.ppf(1-alpha, din = groups-1, dfd = sample-groups
+		
+		f = stats.f_oneway(group1, group2…..)
+
+	Prop
+		critical = critical value: stats.norm.ppf(1-(alpha/2))
+
+		1sample = p_hat - pobs/sqrt((pobs*(1-pobs)/n)
+
+		2sample = pg1-pg2/sqrt(p*(1-p)*(1/n1+1/n2))
+
+		pg1 = prop of group 1, pg2 = prop group 2, p = g1+g2/total, n1=leng1, n2=leng2
+
+	CHI
+		table = ie.  [[3,7],[4,5]]
+		
+		stat, p, dof, expres = chi2_contigency(table)
+
+		prob = conf level
+		
+		critical = chi2.ppf(prob, dof)
+
+	A/B
+
+		put in groups ie (a: access & buy, sneak & buy, access & no, sneak & no)
+
+		stats.fisher_exact(np.array([[a,b],[c,d]))
+			2nd val is paal

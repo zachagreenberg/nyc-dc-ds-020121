@@ -71,3 +71,5 @@ https://docs.google.com/presentation/d/1r4rFHsSD2baOG8sey7xcntoNelzcMusl6XuhZKNY
 https://docs.google.com/presentation/d/1kCuewWEZJVGDBE79LyVVPkPqUQXPcNYCLERdn4-ONdI/edit?usp=sharing
 
 https://docs.google.com/presentation/d/1kCuewWEZJVGDBE79LyVVPkPqUQXPcNYCLERdn4-ONdI/edit?usp=sharing
+
+When a t test is so large, you can use the z critical values to compare the test statistic

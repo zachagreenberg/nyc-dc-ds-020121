@@ -1,0 +1,27 @@
+CHI SQUARED
+
+Association between categorical variables
+
+Goodness of Fit - Does observed frequency differ from theoretical
+Ie how people identify politically, does it fit a theoretical distribution seeing if they are the same
+Does the actual one differ from the theoretical
+
+Homogeneity - are two population distributions are the same
+Ie distribution of students in different majors
+
+Independence - if variables are independent of eachother
+Ie political identification and how you vote on an issue(ie voting rights of prisoners) 
+	NULL: They are independent
+	ALT: They are not
+		ie z for when you have more than two groups that your comparing against (ie survival rate and different kinds of cancer)
+
+Data should be frequencies
+Categories are mutually exclusive 
+Observations are independent of each other
+
+
+Chi Squared 
+Proportional Z Test
+ANOVA
+Chi Squared
+ANOVA
