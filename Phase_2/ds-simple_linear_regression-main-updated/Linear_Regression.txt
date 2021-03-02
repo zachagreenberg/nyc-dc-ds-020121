@@ -1,0 +1,45 @@
+Linear Regression
+
+Simple linear regression is functions of a single variable ie Y=f(X)
+
+Uses continuous variables
+
+How does one factor affect another? OR can predict the future based on something.
+	No model is perfect / true, but they are useful
+
+Try to build the best fit line
+	the line with the least squares regression
+
+Model(line) = y_hat = b1x+b0 — its good to use beta so we can add subscripts for multiple
+	b1 is slope and b0 is y intercept
+
+Error is the distance between y-y_hat and we square when we square them none of the values are negative
+
+Outliers will pull the line in their direction.
+
+Pearsons r is the correlation coefficient. It helps to create the line of best fit.
+
+From lin_reg import best_line
+
+
+FROM THE LECTURE DOWN HERE:
+
+
+Covariance and Correlation
+Correlation — variables often change together
+
+Covariance — how the variables covary
+
+np.cov(X,Y, ddof=0)[0,1] —ddof is 0 because it is the whole population
+
+Correlation is the covariance with the std in the denominator
+	Values will be between -1 and 1
+	if x = y, corr = 1
+np.corrcoef(X,Y)[0,1]
+Stats.pearsonr(X,Y)[0] —WITH SCIPY!
+
+Smaller error, higher correlation
+
+CORRELATION IS NOT CAUSATION
+
+desmos.com/calculator/jwquvmikhr

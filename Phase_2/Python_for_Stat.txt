@@ -5,7 +5,14 @@ Hypothesis
 Set Alpha
 Name Test
 
-Alternative is what you are trying to prove.
+Alternative is what you are trying to prove. Think of it as a research hypothesis.
+Null hypothesis is the status quo or the opposite.
+
+Keep NULL and ALT simple
+M = MNOT
+
+CHISQ(ind) / ANOVA m1 = m2 = m3
+            alt null is NOT true
 
 CONFIDENCE INTERVALS
 https://www.kaggle.com/hamelg/python-for-data-23-confidence-intervals
