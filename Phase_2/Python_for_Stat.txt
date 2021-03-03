@@ -96,3 +96,14 @@ HYPO
 
 		stats.fisher_exact(np.array([[a,b],[c,d]))
 			2nd val is paal
+            
+
+https://drive.google.com/drive/folders/1yarn-66SoRlhiGgjCLzc-OE1x9PCU-3W?usp=sharing 
+
+            
+            
+BAYES IN PYTHON
+p_A_given_B = (p_B_given_A * p_A) / (p_B_given_A * p_A + p_B_given_notA * p_notA)
+
+
+Type I reject the null when you should not.

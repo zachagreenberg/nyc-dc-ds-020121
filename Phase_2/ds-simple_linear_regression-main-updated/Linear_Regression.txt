@@ -43,3 +43,12 @@ Smaller error, higher correlation
 CORRELATION IS NOT CAUSATION
 
 desmos.com/calculator/jwquvmikhr
+
+
+Assumptions:
+1 Linearity - must have linear relation
+2 Normality - must be part of normal distr
+3 Homoscedasticity - dispersed evenly around line
+
+Jarque-Bera - test for normality
+Goldfield -Quandt - test for homooscedatisticy
