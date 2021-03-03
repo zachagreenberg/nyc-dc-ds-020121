@@ -1,0 +1,7 @@
+Bayes 
+p_A_given_B = (p_B_given_A * p_A) / (p_B_given_A * p_A + p_B_given_notA * p_notA)
+
+P_A is prior -- prob of hypothesis
+P_B is marginal likelihood -- prob of observing the evidence (normalization)
+P_B_given_A is likelihood -- prob of observing new evidence given hypothesis
+P_A_given_B is posterior -- what were trying to estimate
