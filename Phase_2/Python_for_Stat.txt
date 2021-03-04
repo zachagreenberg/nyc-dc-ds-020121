@@ -1,5 +1,6 @@
 PYTHON FOR STATISTICS
 
+*to figure out the test figure out what your dependent variable is*
 
 Hypothesis
 Set Alpha
@@ -11,8 +12,14 @@ Null hypothesis is the status quo or the opposite.
 Keep NULL and ALT simple
 M = MNOT
 
-CHISQ(ind) / ANOVA m1 = m2 = m3
+CHISQ(ind) / ANOVA m1 = m2 = m3  -- CHI - are the distributions the same
             alt null is NOT true
+            
+            IF NUMERIC IT IS ANOVA, CAT (Prop) is CHISQ
+            
+LINEAR REGRESSION:
+    NULL: Coefficient(Beta) == 0
+    ALT: Coeff != 0
 
 CONFIDENCE INTERVALS
 https://www.kaggle.com/hamelg/python-for-data-23-confidence-intervals
@@ -23,10 +30,11 @@ https://www.kaggle.com/hamelg/python-for-data-24-hypothesis-testing
 CIs
 	Z
 		critical value: stats.norm.ppf(1-(alpha/2))
-		moe: zcrit * popstd/sqrt(n)
+		moe: zcrit * popstd/(sqrt(n))
 		CI: (x_bar-moe, x_bar+moe)
 			stats.norm.interval(conf.level, mean, popstd/sqrt(n)
-	T
+	**T is for small sample and no pop std. If it is large you can use z**
+    T
 		critical: stats.t.ppf(1-(alpha/2), df)
 		moe = tcrit * samplestd/sqrt(n)
 		CI = (x_bar - moe, x_bar+moe)
@@ -53,7 +61,8 @@ HYPO
 
 		1sample = stats.ttest_1samp(data, pop mean, *alternative)
 		
-		2 sample = stats.ttest_ind(data1, data2, equal_var = False, *alternative*)
+        **WELCH'S IF VAR IS 2X MORE
+		2 sample = stats.ttest_ind(data1, data2, equal_var = True, *alternative*)
 			*pooledvar is equal_var ==True
 			stats.ttest_ind_from_stats(mean1, std1, n1, mean2, std2, n2, equal_var, *alternative: ie two sided, less, greater)
 				
@@ -67,7 +76,7 @@ HYPO
 		
 		pval = stats.norm.sf(abs(z)) * 2 for 2 tailed
 
-	ANO
+	ANO --MEAN SIDE OF TABLE
 		critical = stats.f.ppf(1-alpha, din = groups-1, dfd = sample-groups
 		
 		f = stats.f_oneway(group1, group2…..)
@@ -81,7 +90,7 @@ HYPO
 
 		pg1 = prop of group 1, pg2 = prop group 2, p = g1+g2/total, n1=leng1, n2=leng2
 
-	CHI
+	CHI --PROPORTION SIDE OF TABLE
 		table = ie.  [[3,7],[4,5]]
 		
 		stat, p, dof, expres = chi2_contigency(table)
@@ -99,11 +108,22 @@ HYPO
             
 
 https://drive.google.com/drive/folders/1yarn-66SoRlhiGgjCLzc-OE1x9PCU-3W?usp=sharing 
-
             
             
 BAYES IN PYTHON
 p_A_given_B = (p_B_given_A * p_A) / (p_B_given_A * p_A + p_B_given_notA * p_notA)
 
+When creating dummies check the column names of the df before you pass it in.
 
 Type I reject the null when you should not.
+
+GET DUMMIES
+dummy = pd.get_dummies(df['content_rating'], drop_first = True)
+variables = pd.concat([df, dummy], axis = 1)
+
+Threshold for Colinearity is .9
+    use df.corr()
+If an r2 is close to one, it may be too good to be true
+
+MULT REGRESSION
+ols(formula='gross~cast_total_facebook_likes+budget+years_old+G+PG+R', data=model_data).fit().summary()
