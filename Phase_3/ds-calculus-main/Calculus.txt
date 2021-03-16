@@ -1,0 +1,52 @@
+Calculus
+
+Rate of change is how something changes
+	Ie steepness of a hill
+
+Slope is change in y over change in x
+	y2-y1 delta y rise
+	x2-x1 delta x run
+
+Derivative instantaneous rate of change
+
+f(x-deltax) - fx / delta x
+Y2 - y1
+
+We want to know what the number is if we were to keep making the delta x smaller and smaller to 0
+
+Power rule
+X2 = 2x
+
+Constants apply them at the last second 
+
+Additive Rule
+x + y  = der x + der y
+
+Product Rule
+Fx gx = fx*g’x + gx*f’x
+
+x2*x = x3
+x2*1 + 2x*x = 3x2
+
+wolframalpha
+
+When derivative goes from pos to negative it has to go to 0 at some point 
+
+First derivative does the extreme points the 0 ones. Candidates for max and min
+Second derivative identifies the what the min or max is or conduction pt. Plug the x from the derivative into the second
+
+If we know we’re going up and getting less steep we know we are getting close to the max or vice versa. This is called the LOCAL MAX
+
+Partial Derivatives
+Looks like a curly d
+
+D/dx is partial derive for respective x
+
+Treat the other variables as a constant
+X2 y 
+2xy respect to x
+
+X2 y
+x2 respect to y
+
+Gradient descent puts the change in a vector

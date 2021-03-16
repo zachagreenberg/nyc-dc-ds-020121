@@ -1,0 +1,11 @@
+Notes on OOP
+
+copy will create a copy so you can maintain the original, except when it gets too complicated like a nested list then deepcopy will create a copy so you can maintain the original
+
+attribute is no parenthesis
+method is parenthesis
+
+instantiate an obj:
+num = Calculator()
+
+with the __init__ is has all the attributes and methods when called automatically

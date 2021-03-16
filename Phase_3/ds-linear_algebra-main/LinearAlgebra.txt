@@ -1,0 +1,44 @@
+system of equations:
+np.linalg.inv(preds.T.dot(preds)).dot(preds.T).dot(target)
+
+inverse:
+np.linalg.inv(matrix)
+
+AI = IA = A
+
+identity = np.eye(dimension)
+
+column vector 
+np.array([[4],[5]])
+
+row:
+np.array([[4,5]])
+
+NOTE THE DIFFERENCE
+
+Multiplication use the @ or .dot()
+
+Vector is an ordered list of numbers (list) First number is x axis — x, y, z
+
+Vector addition is matching the coordinates together
+Scaling is multiplying the components of a scalar
+
+Arrow in a coordinate system
+
+Basis vectors are I-hat and j-hat
+
+Scaling two vectors is called a linear combination
+
+The span is the set of all the linear combinations
+
+Linearly independent if they add different dimensions 
+
+Linear transformation is a function — transformation suggests movement
+
+Linear must be in a line and origin is in place 
+
+Matrix transformation, column 1 is ihat column2 is that   
+
+90 counter clockwise degree is [[01][-10]]
+
+Shear [[10][11]]  
