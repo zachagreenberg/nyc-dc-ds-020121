@@ -24,3 +24,6 @@ Test your html code: https://htmledit.squarefree.com
 developer.mozilla.org/en-US/docs/Web/HTML/Element shows more tags
 
 If a tag is embedded in another it is the child tag, the one before it is parent, any on the same line is sibling
+    
+cheatsheet
+    https://blog.hartleybrody.com/web-scraping-cheat-sheet/

@@ -1,0 +1,18 @@
+Logistic Regression
+
+Dont want to say yes or no 0 or 1
+We want to include probability
+
+Sigmoid allows you to predict whether or not a student will get into college
+
+Logisitic regression is bound between 0 and 1 and that's how we like to do classification. You can interpret the coefficient. If positive it means as you increase the variable the prob of the outcome increases as well. If negative it is a negative relationship between feature and outcome. BUT you cannot do this literally!
+
+logodds is equal to linear format
+For coefficient we are solving for logodds prob that something will belong to a class
+
+We try to figure out the coefficients by using a cost function
+Look at the blog for the log loss function
+
+You have a probability, there is a prob and corret answer. They look at the error and tries to find the places you were off and minimize that probability.
+
+Cost function here is logloss
