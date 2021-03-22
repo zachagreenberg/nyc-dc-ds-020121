@@ -1,0 +1,15 @@
+Bias Variance Notes
+
+Too simple - bias underfit
+Complex - high variance overfit
+
+
+You can’t have a high variance that is underfit
+
+Model with high variance will change a lot if you take a different set of data
+
+If model is simple it won’t change that much if you drop one house 
+
+Variance the parameters will vary a lot if you were to take a different set of training data
+
+Watch statsquest
