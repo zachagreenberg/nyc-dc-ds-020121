@@ -1,0 +1,15 @@
+METRICS
+
+Specificity is True Neg
+
+Accuracy is True Pos correct
+
+Precision is True Pos / Predict Pos
+
+ie cost of declaring pos is high: who is qualified for a clinical study
+
+Recall is True Pos / Predict Pos + Predict Neg
+
+ie cost of declaring neg is high: disease detection
+
+F1 is a hybrid of all of them

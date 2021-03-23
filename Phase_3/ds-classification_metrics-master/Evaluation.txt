@@ -1,0 +1,27 @@
+Evaluation Metrics Notes:
+
+Precision - more careful about classifying True Pos / Predict
+Use precision when False pos are worse
+Ie crime conviction & falsely accusing
+
+Sensitivity is True Pos rate
+Specificity is True Neg rate
+FPR = 1-Specificity
+
+Recall - less careful Positive / Actual
+Use recall when False neg are worse
+Ie cancer detection
+
+They have an inverse relationship
+Which one is better is situationally dependent
+
+Accuracy is total identified correctly / total
+F1 is 2(Precision * Recall / Precision + Recall)
+
+High F1 is good. Your model is doing well all around.
+F1 penalizes models if precision or recall is too high. You want a balance.
+
+ROC is true pos/false pos
+Don’t want one to be 50
+
+AUC & ROC are better metrics at times because they consider things at different thresholds.

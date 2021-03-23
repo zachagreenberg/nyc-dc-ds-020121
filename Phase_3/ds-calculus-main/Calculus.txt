@@ -50,3 +50,4 @@ X2 y
 x2 respect to y
 
 Gradient descent puts the change in a vector
+
