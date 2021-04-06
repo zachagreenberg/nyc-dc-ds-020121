@@ -1,0 +1,27 @@
+PCA Notes
+
+PCA lowers dimensionality and is still able to explain variances. 
+It comes from a bunch of linear combinations of the data, but you do not know which is which.
+This is a sort of linear transformation with Eigenvectors and Eigenvalues. 
+
+https://towardsdatascience.com/@abdullatif.h
+
+
+You have a bunch of data with multiple dimensions, you reduce it down to fewer dimensions.
+
+Visualizations & Reducing Level of data so you can run a model
+
+PCA gives you new features via a combination of values. 
+
+explained variance ratio - how much variance is explained by the specific components
+
+plt.plot(np.cumsum(pca.explained_variance_ratio)
+This gives you a diagram like a k best but for the number of components
+
+fit it then from fitting you can get an idea of how much variance is explained by each principal component
+
+https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html
+this is for 3d graphs
+
+Hopefully this will make the data pop a bit more and be more clearly.
+
