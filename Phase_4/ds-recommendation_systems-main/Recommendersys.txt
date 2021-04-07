@@ -1,0 +1,43 @@
+Recommender Systems
+
+Non-personalized - 
+Suggests the most popular items
+Making the same suggestion regardless of characteristics
+Super easy computationally, but it's not personalized and new items won't get traction
+
+
+Content based - 
+Recommend based on properties of the item. Other users are not considered
+Which items are most similar to eachother
+ie looking at beer (ingredients)
+sparse matrix (0s and 1s)
+how similar one content is to another
+we use cosine similarity - measuring angle between the two vectors
+    based on the content and looking for similar products
+    
+Content is more unsupervised, there is no number you can assign. 
+
+Collaborative filtering - 
+user and item based. You need an evaluation metric
+suggesting an item based on the similarity between users
+recommending products based on similar products
+This is memory based
+Taking how similar the users are and how they rate a certain item we don't have.
+You can evaluate on this because you would leave a bunch of evaluations, 
+create predictions, and evaluate it on a train and test set
+
+Matrix Factorization - 
+Model based
+You no longer have to remember other users things. 
+Matrix factorization is trying to find similarity in a vector that simplifies it
+
+Taking the items and users and learn them in a way a model would learn something. 
+Taking the components and breaking it down into its factors because you don’t need to have all 		the factors
+
+    
+Inverse of a matrix gives you the identity matrix
+
+Transpose flips columns and rows
+
+Slides: 
+https://docs.google.com/presentation/d/1jFklxlTxs3Wsz77hJ_TNjUdGPayLi5X9jCor5wRl8H8/edit?usp=sharing
