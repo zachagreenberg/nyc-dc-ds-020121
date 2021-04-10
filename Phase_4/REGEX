@@ -1,0 +1,57 @@
+REGEX
+
+Practice Problems:
+https://regexone.com/
+
+regex101.com - lets you play with regex
+
+Cheat Sheet
+https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+
+https://automatetheboringstuff.com/2e/chapter7/
+
+https://developers.google.com/edu/python/regular-expressions
+
+language that you use to search for patterns in data.
+
+. - any character 
+\. = .
+\\ = \
+\d = digit
+\D = NOT digit
+\w = word character (a-z, A-Z, 0-9, _ )
+\W = not a word character
+\s = whitespace
+\S = NOT whitespace ie characters
+\b = Word Boundary ie Ha Ha
+\B = NOT word boundary ie Ha
+^ = beginning
+$ = end
+
+phone number =/d/d/d./d/d/d./d/d/d/d
+#will match any separator
+
+/d/d/d[-.]/d/d/d[-.]/d/d/d/d
+
+[-.] is a character set where it is only matching - or . 
+
+[89]00 - looking for 800 numbers
+[^] - this negates the set if it's in a character set
+[^b]at - looking for words with at that are NOT bat
+
+{3} is a quanifier for 3
+
+Mr\.?\s[A-Z]\w* - ? means 0 or 1
+
+* is 0 or more
++ is 1 or more
+
+M(r|s|rs) This looks for Mr Ms or Mrs - | is or () is group
+
+
+CoreyMSchaefer@gmail.com
+corey.schafer.university.edu
+corey-321-shafer@my-work.net
+
+[a-zA-z.-0-9 ]+@[a-zA-z-]+\.(com|edu|net)
+

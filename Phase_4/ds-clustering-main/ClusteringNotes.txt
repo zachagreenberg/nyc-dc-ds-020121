@@ -1,0 +1,7 @@
+Types of Clustering and when to use:
+
+https://medium.com/predict/three-popular-clustering-methods-and-when-to-use-each-4227c80ba2b6
+
+COSINE SIMILARITY
+https://markrubin85.medium.com/a-quick-rundown-of-cosine-similarity-7a73b171c3b7
+

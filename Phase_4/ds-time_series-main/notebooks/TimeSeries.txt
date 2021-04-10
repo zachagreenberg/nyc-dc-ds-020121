@@ -1,0 +1,14 @@
+This is essentially grid search for Time Series:
+https://pypi.org/project/pmdarima/
+
+If all you have is a list of stock prices, can you find a pattern in the data so you can predict the next period?
+
+Your data is serially correlated
+
+ie webtraffic to a website
+
+AR Model - can I look at the previous day and predict tomorrow from the previous day. We are shifting it down one.
+
+Can have multiple day lags. 
+
+ACF and PCF, if the pattern still persists, you will take another difference

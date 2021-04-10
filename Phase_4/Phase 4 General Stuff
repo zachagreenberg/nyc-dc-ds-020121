@@ -1,0 +1,26 @@
+PHASE 4 STUFF
+
+PCA 
+-dimensionality reduction ie features
+-uses covariance matrix the distances are NOT scaled
+-scaling the covar gets the correlation matrix
+-eigendecomposition to create new dimensions
+-eigenvalues are on average 1, higher than that captures more variance
+-eigenvectors tell us the variance is captured by the dimension
+-the vectors show the variance captures by the PCs
+-if the Eigenvalues are <1 we can generally ignore them
+
+In sklearn:
+pca = PCA(n_components=2) 
+X_packages_pca2 = pca.fit_transform(X_packages_scaled)
+pca.explained_variance_ - eigenvalues
+pca.components_ - eigenvectors
+
+SVD
+Eigendecomposition has to be square
+SVD multiplies a matrix by its transpose
+
+RECOMMENDER SYS
+Content - similar items a user has already enjoyed
+Collaborative - recommending a items based on similar users
+Uses cosine similarity, we want the highest (the angle will be smaller)
