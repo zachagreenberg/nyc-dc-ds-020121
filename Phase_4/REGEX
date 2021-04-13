@@ -1,5 +1,8 @@
 REGEX
 
+This pattern looks for words. They may or may not have an apostrophe. Punctuation and Numbers are excluded:
+r"([a-zA-Z]+(?:'[a-z]+)?)", "I'd"
+
 Practice Problems:
 https://regexone.com/
 
